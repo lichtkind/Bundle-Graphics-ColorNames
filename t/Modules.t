@@ -1,15 +1,19 @@
 #!/usr/bin/perl -w
 use strict;
+no warnings 'once';
 BEGIN { unshift @INC, 'lib' };
 
-my @modules = qw/Graphics::ColorNames Graphics::ColorNames::Crayola Graphics::ColorNames::EmergyC Graphics::ColorNames::GrayScale Graphics::ColorNames::HTML  Graphics::ColorNames::Mozilla Graphics::ColorNames::Netscape Graphics::ColorNames::Pantone Graphics::ColorNames::VACCC Graphics::ColorNames::Werner Graphics::ColorNames::Windows Graphics::ColorNames::WWW/;
-
-use Test::More tests => 13;
+use Test::More tests => 14;
 use Test::NoWarnings;
+
+eval 'use Bundle::Graphics::ColorNames;';
+is($@, '', "Bundle::Graphics::ColorNames loaded" );
+
+my @modules = @Bundle::Graphics::ColorNames::Packages;
+
 
 for my $module (@modules){
     eval 'use '.$module.';';
-    print  "$module \n";
     is($@, '', "$module present" );
 }
 

@@ -1,10 +1,10 @@
 ### NAME
 
-    Graphics-ColorNames-Pantone - RGB values of Pantone colors (PMS and Report)
+    Bundle-Graphics-ColorNames - all color schemata at once
 
 ### VERSION
  
-    0.53
+    0.4
 
 [on CPAN](https://metacpan.org/pod/Graphics-ColorNames-Pantone)
 
@@ -58,13 +58,24 @@
 ### PREREQUISITES
 
     Graphics::ColorNames
+    Graphics::ColorNames::Crayola
+    Graphics::ColorNames::EmergyC
+    Graphics::ColorNames::GrayScale
+    Graphics::ColorNames::HTML
+    Graphics::ColorNames::Mozilla
+    Graphics::ColorNames::Netscape
+    Graphics::ColorNames::Pantone
+    Graphics::ColorNames::VACCC
+    Graphics::ColorNames::Werner
+    Graphics::ColorNames::Windows
+    Graphics::ColorNames::WWW
 
  
-[CHANGES](https://github.com/lichtkind/Graphics-ColorNames-Pantone/blob/main/Changes)
+[CHANGES](https://github.com/lichtkind/Bundle-Graphics-ColorNames/blob/main/Changes)
 
-[CONTRIBUTING](https://github.com/lichtkind/Graphics-ColorNames-Pantone/blob/main/CONTRIBUTING)
+[CONTRIBUTING](https://github.com/lichtkind/Bundle-Graphics-ColorNames/blob/main/CONTRIBUTING)
 
-[CONTRIBUTORS](https://metacpan.org/pod/Graphics-ColorNames-Pantone#CONTRIBUTORS)
+[CONTRIBUTORS](https://metacpan.org/pod/Bundle-Graphics-ColorNames#CONTRIBUTORS)
 
 
 ### AUTHOR

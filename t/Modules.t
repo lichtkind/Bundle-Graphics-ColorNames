@@ -6,13 +6,23 @@ BEGIN { unshift @INC, 'lib' };
 use Test::More tests => 14;
 use Test::NoWarnings;
 
-eval 'use Bundle::Graphics::ColorNames;';
-is($@, '', "Bundle::Graphics::ColorNames loaded" );
+my @Modules = qw/
+    Graphics::ColorNames
+    Graphics::ColorNames::Crayola
+    Graphics::ColorNames::EmergyC
+    Graphics::ColorNames::GrayScale
+    Graphics::ColorNames::HTML
+    Graphics::ColorNames::Mozilla
+    Graphics::ColorNames::Netscape
+    Graphics::ColorNames::Pantone 
+    Graphics::ColorNames::VACCC
+    Graphics::ColorNames::Werner 
+    Graphics::ColorNames::Windows 
+    Graphics::ColorNames::WWW
+    Bundle::Graphics::ColorNames/;
 
-my @modules = @Bundle::Graphics::ColorNames::Packages;
 
-
-for my $module (@modules){
+for my $module (@Modules){
     eval 'use '.$module.';';
     is($@, '', "$module present" );
 }

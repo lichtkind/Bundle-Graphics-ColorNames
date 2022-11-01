@@ -1,5 +1,12 @@
 
+1.05 2022-11-01 lichtkind
+--------
+    * & fix POD and version
+
+
 1.0 2022-10-31 lichtkind
 --------
     * = init release with 1 + 11 deps
 
+
+... there was prior work by Robert Rothenberg

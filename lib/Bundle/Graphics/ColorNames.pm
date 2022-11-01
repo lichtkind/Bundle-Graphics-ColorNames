@@ -5,7 +5,7 @@ require 5.008;
 use strict;
 use warnings;
 
-our $VERSION = '1.0';
+our $VERSION = '1.05';
 
 1;
 
@@ -19,17 +19,27 @@ This Module contains no code. Its only feature is his dependency list
 which contains L<Graphics::ColorNames> as well as all modules that provide
 one or more schemas of RGB values. These are:
 
-    L<Graphics::ColorNames::Crayola>
-    L<Graphics::ColorNames::EmergyC>
-    L<Graphics::ColorNames::GrayScale>
-    L<Graphics::ColorNames::HTML>
-    L<Graphics::ColorNames::Mozilla>
-    L<Graphics::ColorNames::Netscape>
-    L<Graphics::ColorNames::Pantone>
-    L<Graphics::ColorNames::VACCC>
-    L<Graphics::ColorNames::Werner>
-    L<Graphics::ColorNames::Windows>
-    L<Graphics::ColorNames::WWW>
+L<Graphics::ColorNames::Crayola>
+
+L<Graphics::ColorNames::EmergyC>
+
+L<Graphics::ColorNames::GrayScale>
+
+L<Graphics::ColorNames::HTML>
+
+L<Graphics::ColorNames::Mozilla>
+
+L<Graphics::ColorNames::Netscape>
+
+L<Graphics::ColorNames::Pantone>
+
+L<Graphics::ColorNames::VACCC>
+
+L<Graphics::ColorNames::Werner>
+
+L<Graphics::ColorNames::Windows>
+
+L<Graphics::ColorNames::WWW>
 
 =head1 AUTHOR
 

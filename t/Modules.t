@@ -3,7 +3,7 @@ use strict;
 no warnings 'once';
 BEGIN { unshift @INC, 'lib' };
 
-use Test::More tests => 14;
+use Test::More tests => 16;
 use Test::NoWarnings;
 
 my @Modules = qw/
@@ -14,11 +14,13 @@ my @Modules = qw/
     Graphics::ColorNames::HTML
     Graphics::ColorNames::Mozilla
     Graphics::ColorNames::Netscape
-    Graphics::ColorNames::Pantone 
+    Graphics::ColorNames::Pantone
     Graphics::ColorNames::VACCC
-    Graphics::ColorNames::Werner 
-    Graphics::ColorNames::Windows 
+    Graphics::ColorNames::Werner
+    Graphics::ColorNames::Windows
     Graphics::ColorNames::WWW
+    Graphics::ColorNames::X
+    Graphics::ColorNames::XKCD
     Bundle::Graphics::ColorNames/;
 
 
